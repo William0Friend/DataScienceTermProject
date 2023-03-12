@@ -1,0 +1,22 @@
+def question_seven(yhat, y):
+    """
+    Arguments:
+    yhat -- vector of size m (predicted labels)
+    y -- vector of size m (true labels)
+    
+    Returns:
+    accuracy -- the value of prediction accuracy defined above
+    """
+    
+    ### START CODE HERE ### (≈ 1 line of code)
+    # replace None with your code
+    
+    accuracy = np.sum(np.where(yhat == None))
+
+    return accuracy
+    ### END CODE HERE ###
+
+# do not change the code below  
+y = np.array([   [1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0]])
+yhat = np.array([[1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0]])
+question_seven(yhat, y)
